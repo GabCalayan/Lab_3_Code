@@ -6,5 +6,7 @@ const map = new mapboxgl.Map ({
     container: 'map',
     style: 'mapbox://styles/heisenzilla/cleg0trsv002001s135zy7mr3',
     center: [-79.347015, 43.651070],
-    zoom: 7,
+    zoom: 10,
 });
+
+//Adding the source data from my published website in GITHUB
