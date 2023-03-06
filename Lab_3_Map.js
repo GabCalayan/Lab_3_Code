@@ -37,7 +37,7 @@ map.addLayer({
             'step', //For this coloring section, I used https://htmlcolorcodes.com for my chosen colors
             ['get', '_id'],
             '#141513',
-            1, '#629628',
+            1, '#629628', 
             2, '#939628',
             3, '#963F28',
             4, '#962828',
@@ -54,7 +54,7 @@ map.addLayer({
 });
 
 
-map.addLayer ({
+map.addLayer ({ //Adding a layer of labels for my filtered data
     'id': 'Toronto_Public_Labels',
     'type': 'symbol',
     'source': 'Public_art',
@@ -74,6 +74,7 @@ map.addLayer ({
 
 
 //INTERACTIVE SECTION 
+
 //Adding the search control to the map 
 map.addControl(
     new MapboxGeocoder({
@@ -157,7 +158,7 @@ legendlabels.forEach((label,i) => { //For each legend label that we made earlier
     const value = document.createElement('span');
     value.innerHTML = `${label}`;
 
-    item.appendChild(key);
+    item.appendChild(key); //AppendChild is basically adding these variables that we have created above to our legend 
     item.appendChild(value);
     
     legend.appendChild(item);
